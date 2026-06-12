@@ -1,0 +1,17 @@
+<Window x:Class="Cafeteria.wpfVerMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Carta del Día" Height="440" Width="420"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#1A1D2E" Margin="16">
+        <StackPanel>
+            <TextBlock Text="📋 Carta del Día" FontSize="16" FontWeight="Bold"
+                       Foreground="#2DD4BF" Margin="0,0,0,12"/>
+            <ListBox x:Name="lstMenu" Background="#2D3158" Foreground="White"
+                     BorderBrush="#4C4F7C" Height="320" FontSize="13"/>
+            <Button Content="Cerrar" Height="36" Margin="0,14,0,0"
+                    Background="#374151" Foreground="#94A3B8"
+                    BorderThickness="0" Cursor="Hand" Click="btnCerrar_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

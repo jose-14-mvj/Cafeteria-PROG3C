@@ -1,0 +1,29 @@
+<Window x:Class="Cafeteria.wpfMenuEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cafetería - Empleado" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#1A1D2E">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <TextBlock Text="CAFETERÍA" FontSize="26" FontWeight="Bold"
+                       Foreground="#2DD4BF" HorizontalAlignment="Center" Margin="0,0,0,4"/>
+            <TextBlock x:Name="lblBienvenida" FontSize="13"
+                       Foreground="#64748B" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+
+            <Button Content="🛒  Tomar Pedido"      Height="48" Margin="0,0,0,12"
+                    Background="#0F6E56" Foreground="White" BorderThickness="0"
+                    FontSize="14" FontWeight="Bold" Cursor="Hand"
+                    Click="btnTomar_Click"/>
+            <Button Content="📋  Ver Menú del Día"  Height="44" Margin="0,0,0,12"
+                    Background="#0F6E56" Foreground="White" BorderThickness="0"
+                    FontSize="13" Cursor="Hand" Click="btnMenu_Click"/>
+            <Button Content="🧾  Mis Ventas de Hoy" Height="44" Margin="0,0,0,24"
+                    Background="#0F6E56" Foreground="White" BorderThickness="0"
+                    FontSize="13" Cursor="Hand" Click="btnMisVentas_Click"/>
+
+            <Button Content="Cerrar Sesión" Height="36"
+                    Background="#374151" Foreground="#94A3B8" BorderThickness="0"
+                    FontSize="12" Cursor="Hand" Click="btnSalir_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

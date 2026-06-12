@@ -1,0 +1,63 @@
+<Window x:Class="Cafeteria.wpfGestionMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestionar Menú" Height="520" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#1A1D2E" Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Menú de Platos" FontSize="16" FontWeight="Bold"
+                   Foreground="#A78BFA" Margin="0,0,0,12"/>
+
+        <ListBox Grid.Row="1" x:Name="lstPlatos" Background="#2D3158"
+                 Foreground="White" BorderBrush="#4C4F7C" FontSize="13"/>
+
+        <Grid Grid.Row="2" Margin="0,12,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nombre del plato:"
+                       Foreground="#CBD5E1" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtNombre" Grid.Row="0" Grid.Column="1"
+                     Background="#2D3158" Foreground="White" BorderBrush="#4C4F7C"
+                     Padding="6,4" Margin="4,0,4,0"/>
+            <TextBlock Grid.Row="0" Grid.Column="2" Text="Precio Bs.:"
+                       Foreground="#CBD5E1" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtPrecio" Grid.Row="0" Grid.Column="3"
+                     Background="#2D3158" Foreground="White" BorderBrush="#4C4F7C"
+                     Padding="6,4"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Descripción:"
+                       Foreground="#CBD5E1" VerticalAlignment="Center" Margin="0,8,0,0"/>
+            <TextBox x:Name="txtDescripcion" Grid.Row="1" Grid.ColumnSpan="3"
+                     Grid.Column="1" Background="#2D3158" Foreground="White"
+                     BorderBrush="#4C4F7C" Padding="6,4" Margin="4,8,4,0"/>
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="4" Orientation="Horizontal"
+                        HorizontalAlignment="Right" Margin="0,10,0,0">
+                <Button Content="+ Agregar"    Width="90" Height="34"
+                        Background="#0F6E56" Foreground="White" BorderThickness="0"
+                        Cursor="Hand" Click="btnAgregar_Click" Margin="0,0,8,0"/>
+                <Button Content="✕ Eliminar"   Width="90" Height="34"
+                        Background="#7F1D1D" Foreground="White" BorderThickness="0"
+                        Cursor="Hand" Click="btnEliminar_Click" Margin="0,0,8,0"/>
+                <Button Content="↕ Activar"    Width="90" Height="34"
+                        Background="#1E3A5F" Foreground="White" BorderThickness="0"
+                        Cursor="Hand" Click="btnActivar_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
