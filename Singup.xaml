@@ -1,0 +1,120 @@
+﻿<Window x:Class="Cafeteria.Singup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cafeteria"
+        mc:Ignorable="d"
+        Title="Singup" Height="700" Width="500">
+    <Grid Background="#1A1D2E">
+        <StackPanel VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="450">
+
+            <TextBlock Text="CREAR CUENTA"
+               FontSize="28"
+               FontWeight="Bold"
+               Foreground="#A78BFA"
+               HorizontalAlignment="Center"
+               Margin="0,0,0,25"/>
+
+            <TextBlock Text="Nombre"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <TextBox x:Name="txtNombre"
+             Height="36"
+             Background="#2D3158"
+             Foreground="White"
+             BorderBrush="#4C4F7C"
+             Padding="8,6"
+             Margin="0,0,0,10"/>
+
+            <TextBlock Text="Apellido Paterno"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <TextBox x:Name="txtApPaterno"
+             Height="36"
+             Background="#2D3158"
+             Foreground="White"
+             BorderBrush="#4C4F7C"
+             Padding="8,6"
+             Margin="0,0,0,10"/>
+
+            <TextBlock Text="Apellido Materno"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <TextBox x:Name="txtApMaterno"
+             Height="36"
+             Background="#2D3158"
+             Foreground="White"
+             BorderBrush="#4C4F7C"
+             Padding="8,6"
+             Margin="0,0,0,10"/>
+
+            <TextBlock Text="Correo"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <TextBox x:Name="txtCorreo"
+             Height="36"
+             Background="#2D3158"
+             Foreground="White"
+             BorderBrush="#4C4F7C"
+             Padding="8,6"
+             Margin="0,0,0,10"/>
+
+            <TextBlock Text="Contraseña"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <PasswordBox x:Name="txtPassword"
+                 Height="36"
+                 Background="#2D3158"
+                 Foreground="White"
+                 BorderBrush="#4C4F7C"
+                 Padding="8,6"
+                 Margin="0,0,0,10"/>
+
+            <TextBlock Text="Confirmar Contraseña"
+               Foreground="#CBD5E1"
+               Margin="0,0,0,4"/>
+
+            <PasswordBox x:Name="txtConfirmarPassword"
+                 Height="36"
+                 Background="#2D3158"
+                 Foreground="White"
+                 BorderBrush="#4C4F7C"
+                 Padding="8,6"
+                 Margin="0,0,0,20"/>
+
+            <Button x:Name="btnRegistrar"
+            Content="REGISTRAR"
+            Height="40"
+            Background="#6D28D9"
+            Foreground="White"
+            FontWeight="Bold"
+            FontSize="14"
+            BorderThickness="0"
+            Cursor="Hand"
+            Margin="0,0,0,10"/>
+
+            <Button x:Name="btnVolver"
+            Content="VOLVER AL LOGIN"
+            Height="40"
+            Background="#2D3158"
+            Foreground="White"
+            FontWeight="Bold"
+            BorderBrush="#4C4F7C"
+            Cursor="Hand"
+            />
+
+            <TextBlock x:Name="lblMensaje"
+               Foreground="#F87171"
+               HorizontalAlignment="Center"
+               Margin="0,15,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

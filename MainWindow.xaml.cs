@@ -13,9 +13,18 @@ namespace Cafeteria
             InitializeComponent();
         }
 
+        
+
+        private void btnCrearCuenta_Click(object sender, RoutedEventArgs e)
+        {
+            Singup singup = new Singup();
+            singup.Show();
+            this.Close();
+        }
+
         private void btnIngresar_Click(object sender, RoutedEventArgs e)
         {
-            string correo   = txtCorreo.Text.Trim();
+            string correo = txtCorreo.Text.Trim();
             string password = txtPassword.Password.Trim();
 
             if (string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(password))
